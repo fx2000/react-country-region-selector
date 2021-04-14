@@ -1,12 +1,12 @@
 {
   "name": "react-country-region-selector",
-  "version": "3.0.2",
+  "version": "3.1.0",
   "description": "CountryDropdown and RegionDropdown React components for your forms.",
-  "author": "country-regions",
+  "author": "fx2000",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/country-regions/react-country-region-selector.git"
+    "url": "https://github.com/fx2000/react-country-region-selector.git"
   },
   "main": "dist/rcrs.js",
   "module": "dist/rcrs.es.js",
