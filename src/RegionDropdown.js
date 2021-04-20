@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import CountryRegionData from '../node_modules/country-region-data/data.json';
+import CountryRegionData from '../node_modules/@fx2000/country-region-data/data.json';
 import { filterRegions } from './helpers';
 import C from './constants';
 

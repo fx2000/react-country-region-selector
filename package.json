@@ -1,5 +1,5 @@
 {
-  "name": "react-country-region-selector",
+  "name": "@fx2000/react-country-region-selector",
   "version": "3.1.0",
   "description": "CountryDropdown and RegionDropdown React components for your forms.",
   "author": "fx2000",
@@ -37,7 +37,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
-    "country-region-data": "^1.6.0",
+    "@fx2000/country-region-data": "^1.6.0",
     "cross-env": "^5.1.4",
     "enzyme": "^3.6.0",
     "enzyme-adapter-react-16": "^1.5.0",

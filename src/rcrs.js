@@ -19,12 +19,12 @@ class CountryDropdown extends React.Component {
 	}
 
 	getCountries () {
-		const { valueType, labelType } = this.props;
+		const { valueType, labelType, language } = this.props;
 
 		return this.state.countries.map(([countryName, countrySlug]) => {
 			return (
-				<option value={(valueType === C.DISPLAY_TYPE_SHORT) ? countrySlug : countryName} key={countrySlug}>
-					{(labelType === C.DISPLAY_TYPE_SHORT) ? countrySlug : countryName}
+				<option value={(valueType === C.DISPLAY_TYPE_SHORT) ? countrySlug : countryName[language]} key={countrySlug}>
+					{(labelType === C.DISPLAY_TYPE_SHORT) ? countrySlug : countryName[language]}
 				</option>
 			);
 		});
@@ -70,6 +70,7 @@ CountryDropdown.propTypes = {
 	name: PropTypes.string,
 	id: PropTypes.string,
 	classes: PropTypes.string,
+  language: PropTypes.string,
 	showDefaultOption: PropTypes.bool,
 	defaultOptionLabel: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
 	onChange: PropTypes.func,
@@ -85,6 +86,7 @@ CountryDropdown.defaultProps = {
 	name: 'rcrs-country',
 	id: '',
 	classes: '',
+  language: 'en',
 	showDefaultOption: true,
 	defaultOptionLabel: 'Select Country',
 	onChange: () => {
